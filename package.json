@@ -1,0 +1,8 @@
+{
+  "name": "ferbun-kurmanji-tts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fêrbûn Kurmanji learning app with secure KurdishTTS proxy",
+  "scripts": { "start": "node server.js" },
+  "engines": { "node": ">=18" }
+}

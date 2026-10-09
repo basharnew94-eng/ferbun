@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ferbun-kurmanji-tts
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: TTS_API_KEY
+        sync: false
+      - key: TTS_SPEAKER_ID
+        value: kurmanji_236
+      - key: TTS_MODEL_VERSION
+        value: v4
